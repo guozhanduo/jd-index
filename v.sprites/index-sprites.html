@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script>
+			fn();
+			window.addEventListener("resize", fn);
+	
+			function fn() {
+				var html = document.querySelector("html");
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 15 + "px"; //得出来的结果不能小于12 
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/index-sprites.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<header id="header">
+			<h1 id="logo"><a href="#"></a></h1>
+			<form class="search"><span class="icon-search"></span><input type="search" placeholder="大闸蟹第二件半价" /></form>
+			<a href="#" class="login">登录</a>
+		</header>
+		<!--主体-->
+		<div id="scroll">
+			<!--banner-->
+			<div class="banner">
+				<ul class="img-list clearFix">
+					<li class="img-li"><a href="#"><img src="img/banner01.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner02.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner03.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner04.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner05.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner06.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner07.jpg"/></a></li>
+					<li class="img-li"><a href="#"><img src="img/banner08.jpg"/></a></li>
+				</ul>
+				<ol class="btn-list">
+					<li class="btn-li"><a href="#" class="active"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+					<li class="btn-li"><a href="#"></a></li>
+				</ol>
+			</div>
+			<!--导航-->
+			<nav class="nav clearFix">
+				<a href="#"><img src="img/1.png"/><span>京东超市</span></a>
+				<a href="#"><img src="img/2.png"/><span>全球购</span></a>
+				<a href="#"><img src="img/3.png"/><span>充值中心</span></a>
+				<a href="#"><img src="img/4.png"/><span>服装城</span></a>
+				<a href="#"><img src="img/5.png"/><span>京东金融</span></a>
+				<a href="#"><img src="img/6.png"/><span>领券</span></a>
+				<a href="#"><img src="img/7.png"/><span>物流查询</span></a>
+				<a href="#"><img src="img/8.png"/><span>我的关注</span></a>
+			</nav>
+			<!--滑动广告-->
+			<div class="new-slider"><a href="#"></a></div>
+			<!--掌上秒杀-->
+			<div class="seckill">
+				<div class="seckill-dec">
+					<h2 class="h2"><span class="icon-clock"></span><span class="name">掌上秒杀</span></h2>
+					<div class="row-time"><time class="hour">05</time><span>:</span><time class="minute">57</time><span>:</span><time class="second">32</time></div>
+					<div class="row-more"><a href="#"><span class="icon-more"></span><span class="name">更多秒杀</span></a></div>
+				</div>
+				<ul class="seckill-list clearFix">
+					<li class="li"><a href="#" class="product1"></a><span class="discount-price">&yen;329</span><span class="initial-price">&yen;399</span></li>
+					<li class="li"><a href="#" class="product2"></a><span class="discount-price">&yen;9.9</span><span class="initial-price">&yen;12.9</span></li>
+					<li class="li"><a href="#" class="product3"></a><span class="discount-price">&yen;128</span><span class="initial-price">&yen;169</span></li>
+					<li class="li"><a href="#" class="product4"></a><span class="discount-price">&yen;329</span><span class="initial-price">&yen;399</span></li>
+					<li class="li"><a href="#" class="product5"></a><span class="discount-price">&yen;9.9</span><span class="initial-price">&yen;12.9</span></li>
+					<li class="li"><a href="#" class="product6"></a><span class="discount-price">&yen;128</span><span class="initial-price">&yen;169</span></li>
+					<li class="li"><a href="#" class="product7"></a><span class="discount-price">&yen;329</span><span class="initial-price">&yen;399</span></li>
+					<li class="li"><a href="#" class="product8"></a><span class="discount-price">&yen;9.9</span><span class="initial-price">&yen;12.9</span></li>
+				</ul>
+			</div>
+			<!--京东超市、全球购、降价排行-->
+			<ul class="hot-list clearFix">
+				<li><a href="#" class="jd-supermarket"></a></li>
+				<li><a href="#" class="global-buy"></a></li>
+				<li><a href="#" class="depreciate-rank"></a></li>
+			</ul>
+			<ul class="flash-list clearFix">
+				<li><a href="#" class="flash-purchase"></a></li>
+				<li><a href="#" class="group-purchase"></a></li>
+			</ul>
+			<!--特色市场-->
+			<div class="banner-wrap feature-market">
+				<div class="banner">
+					<ul class="img-list clearFix">
+						<li class="img-li"><a href="#"><img src="img/banner11.jpg"/></a></li>
+						<li class="img-li"><a href="#"><img src="img/banner12.jpg"/></a></li>
+					</ul>
+					<ol class="btn-list">
+						<li class="btn-li"><a href="#" class="active"></a></li>
+						<li class="btn-li"><a href="#"></a></li>
+					</ol>
+				</div>
+				<h2 class="banner-h2">特色市场</h2>
+				<ul class="classify-list clearFix">
+					<li class="classify-li big-li"><a href="#" class="img1"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img2"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img3"></a></li>
+				</ul>
+				<ul class="classify-list clearFix">
+					<li class="classify-li bottom-li"><a href="#" class="img4"></a></li>
+					<li class="classify-li left-border bottom-li"><a href="#" class="img5"></a></li>
+				</ul>
+			</div>
+			<!--主题街-->
+			<div class="banner-wrap theme-street">
+				<div class="banner">
+					<ul class="img-list clearFix">
+						<li class="img-li"><a href="#"><img src="img/banner21.jpg"/></a></li>
+						<li class="img-li"><a href="#"><img src="img/banner22.jpg"/></a></li>
+					</ul>
+					<ol class="btn-list">
+						<li class="btn-li"><a href="#" class="active"></a></li>
+						<li class="btn-li"><a href="#"></a></li>
+					</ol>
+				</div>
+				<h2 class="banner-h2">主题街</h2>
+				<ul class="classify-list clearFix">
+					<li class="classify-li big-li22"><a href="#" class="img1"></a></li>
+					<li class="classify-li left-border big-li21"><a href="#" class="img2"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img3"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img4"></a></li>
+					<li class="classify-li"><a href="#" class="img5"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img6"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img7"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img8"></a></li>
+					<li class="classify-li"><a href="#" class="img9"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img10"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img11"></a></li>
+					<li class="classify-li left-border"><a href="#" class="img12"></a></li>
+				</ul>
+			</div>
+			<!--品牌推荐-->
+			<div class="banner-wrap brand-recommend">
+				<div class="banner">
+					<ul class="img-list clearFix">
+						<li class="img-li"><a href="#"><img src="img/banner31.jpg"/></a></li>
+						<li class="img-li"><a href="#"><img src="img/banner32.jpg"/></a></li>
+					</ul>
+					<ol class="btn-list">
+						<li class="btn-li"><a href="#" class="active"></a></li>
+						<li class="btn-li"><a href="#"></a></li>
+					</ol>
+				</div>
+				<h2 class="banner-h2">品牌推荐</h2>
+				<ul class="classify-list clearFix">
+					<li class="classify-li li-1"><a href="#" class="img1"></a></li>
+					<li class="classify-li left-border line-2"><a href="#" class="img2"></a></li>
+					<li class="classify-li left-border line-3"><a href="#" class="img3"></a></li>
+				</ul>
+			</div>
+			<div class="jd-home"><a href="#"></a></div>
+			<!--猜你喜欢-->
+			<div class="guess-youlike">
+				<div class="title">
+					<h2 class="h2">猜你喜欢</h2>
+					<a href="#" class="a"><span class="icon-go"></span><span class="text">登陆后更懂你</span><span class="icon-person"></span></a>
+				</div>
+				<ul class="like-list clearFix">
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg1"></div>
+							<div class="name">【京东超市】苏菲超熟睡AIR气垫卫生巾420mm 12片</div>
+						</a>
+						<div class="text"><span class="price">&yen;41.90</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg2"></div>
+							<div class="name">【买一送一】好想你枣夹核桃红枣夹核桃218g和田枣夹核桃</div>
+						</a>
+						<div class="text"><span class="price">&yen;35.80</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg3"></div>
+							<div class="name">富士通 正2匹 1级能效 变频 披挂式 变形金刚 诺可力系列冷空调</div>
+						</a>
+						<div class="text"><span class="price">&yen;11800.00</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg4"></div>
+							<div class="name">【京东超市】双汇 火腿肠 王中王 火腿肠 60g*10支装</div>
+						</a>
+						<div class="text"><span class="price">&yen;15.80</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg5"></div>
+							<div class="name">千寻海风倾城之恋女款施华洛奇元素锆手链情人节礼物</div>
+						</a>
+						<div class="text"><span class="price">&yen;168.00</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg6"></div>
+							<div class="name">【京东超市】金龙鱼 维生素A 营养强化大豆油5L</div>
+						</a>
+						<div class="text"><span class="price">&yen;39.90</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg7"></div>
+							<div class="name">海尔(Haier) 1.5P 变频 智能除甲醛 冷暖 空调挂机 KFR-</div>
+						</a>
+						<div class="text"><span class="price">&yen;2749.00</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+					<li class="like-li">
+						<a href="#" class="img-a">
+							<div class="bg bg8"></div>
+							<div class="name">现代办公室地毯铺方块拼接卧室酒店宾馆工程地毯全国包邮</div>
+						</a>
+						<div class="text"><span class="price">&yen;14.00</span><a href="#" class="similarity">看相似</a></div>
+					</li>
+				</ul>
+			</div>
+			<!--操作-->
+			<div class="operation">
+				<!--点击继续加载-->
+				<div class="load-more line"><a href="#">点击继续加载</a></div>
+				<!--登录、注册-->
+				<nav class="login-nav line">
+					<div class="nav-wrap">
+						<a href="#" class="text">登录</a>
+						<span class="border">|</span>
+						<a href="#" class="text">注册</a>
+						<span class="border">|</span>
+						<a href="#" class="text">反馈</a>
+						<span class="border">|</span>
+						<a href="#" class="text">回到顶部</a>
+					</div>
+				</nav>
+				<!--客户端、app-->
+				<nav class="app-nav line">
+					<div class="nav-wrap">
+						<a href="#">
+							<div class="bg bg1"><span class="award"></span></div>
+							<div class="name">客户端</div>
+						</a>
+						<a href="#">
+							<div class="bg bg2"></div>
+							<div class="name active">触屏版</div>
+						</a>
+						<a href="#">
+							<div class="bg bg3"></div>
+							<div class="name">电脑版</div>
+						</a>
+					</div>
+				</nav>
+				<!--版权-->
+				<div class="copyright">Copyright &copy; 2004-2016 京东JD.com 版权所有</div>
+			</div>
+		</div>
+		<!--脚部-->
+		<footer id="footer">
+			<ul class="footer-list">
+				<li class="li"><a href="#" class="bg1"></a></li>
+				<li class="li"><a href="#" class="bg2"></a></li>
+				<li class="li"><a href="#" class="bg3"></a></li>
+				<li class="li"><a href="#" class="bg4"></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
